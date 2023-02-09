@@ -13,7 +13,10 @@
 }
 .contenedor{
     display: grid;
-    grid-template-columns: 1fr 60%;
+    grid-template-columns: 1fr 3fr;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
     
     
     
@@ -51,12 +54,10 @@
 .perfil{
     margin: auto;
     margin-top: 30px;
-    margin-left: 50px;
     padding: 20px;
     padding-top: 40px;
-    width: auto;
-    height: auto;
-    max-height: 100%;
+    width: 90%;
+    height: calc(100% - 96px);
     border: 3px solid black;
     display: flex;
     flex-direction: column;
@@ -89,11 +90,10 @@
     border: 3px solid black;
     margin: auto;
     margin-top: 30px;
-    margin-right: 70px;
     padding: 20px;
-    width: auto;
-    height: auto;
-    max-height: 100%;
+    width: 90%;
+    height: calc(100% - 76px);
+    /* max-height: auto; */
 }
 .historial h2 {
     color: white;
@@ -103,5 +103,92 @@
 
 .descargar-pdf{
     text-align: center;
+    width: 100%;
+    max-width: 300px;
     margin-top: 20px;
+    padding: 20px;
+    border: 2px solid blue;
+
+}
+.descargar-ahora{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: #286ef2;
+    color: aliceblue;
+    border-radius: 5px;
+
+}
+.descargar-ahora:hover {
+    opacity: 0.9;
+}
+.btn-descarga{
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #286ef2;
+    color: aliceblue;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: 0px;
+    cursor: pointer;
+}
+.btn-descarga:hover{
+    opacity: 0.9;
+}
+.descargarbtn {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.descargar-pdf i {
+    margin-left: 5px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 926px){
+
+    .contenedor{ 
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px){
+
+    .contenedor{ 
+        width: 90%;
+    }
+    .perfil {
+        margin: 5px;
+    }
+    .historial {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 600px){
+    .name{
+        font-size: 35px;
+    }
+    .contenedor{
+        max-width: 90%;
+        display: block;
+    }
+
+    .perfil {
+        width: 90%;
+        margin: 0px;
+    }
+    .historial {
+        width: 90%;
+        margin: 0px;
+    }
+    .descargarbtn{
+        display: block;
+        
+    }
+    .descargar-pdf{
+        max-height: 50px;
+    }
 }
