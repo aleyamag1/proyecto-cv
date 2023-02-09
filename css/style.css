@@ -153,18 +153,31 @@
 
     .contenedor{ 
         width: 100%;
+        
+    }
+    .perfil{
+        max-width: calc(100% - 46px);
+    }
+    .historial{
+        max-width: calc(100% - 46px);
     }
 }
 @media screen and (max-width: 800px){
 
     .contenedor{ 
-        width: 90%;
+        width: 90%
+        
     }
     .perfil {
-        margin: 5px;
+        margin: 0px;
+        
+        
     }
     .historial {
-        margin: 5px;
+        margin: 0px;
+        
+        
+        
     }
 }
 @media screen and (max-width: 600px){
@@ -190,5 +203,59 @@
     }
     .descargar-pdf{
         max-height: 50px;
+    }
+}
+@media screen and (max-width: 412px){
+    .name{
+        font-size: 24px;
+    }
+    .contenedor{
+        max-width: 90%;
+        display: block;
+        
+    }
+
+    .perfil {
+        width: 90%;
+        margin: 0px;
+    }
+    .historial {
+        width: 90%;
+        margin: 0px;
+    }
+    .descargarbtn{
+        display: block;
+        
+    }
+    .descargar-pdf{
+        max-height: 50px;
+        display: inline-table;
+    }
+}
+@media screen and (max-width: 360px){
+    .name{
+        font-size: 24px;
+    }
+    .contenedor{
+        max-width: 90%;
+        display: block;
+        
+    }
+
+    .perfil {
+        width: 90%;
+        margin: 0px;
+    }
+    .historial {
+        width: 90%;
+        margin: 0px;
+    }
+    .descargarbtn{
+        display: block;
+        
+    }
+    .descargar-pdf{
+        max-height: 50px;
+        display: inline-table;
     }
 }
