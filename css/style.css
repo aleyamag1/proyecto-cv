@@ -233,6 +233,9 @@
     }
 }
 @media screen and (max-width: 360px){
+    .foto-img{
+        width: 250px;
+    }
     .name{
         font-size: 24px;
     }
